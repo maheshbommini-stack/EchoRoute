@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EcoRoute | Carbon-Aware Travel</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    eco<span>route</span>°
+  </div>
+
+  <div class="header-status">
+    🌱 CARBON-AWARE TRAVEL
+  </div>
+
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        TRAVEL DIFFERENTLY
+      </p>
+
+      <h1>
+        Every journey<br>
+        leaves a <span>trace.</span>
+      </h1>
+
+      <p class="description">
+        Compare your transportation choices by travel time,
+        estimated cost and carbon emissions.
+      </p>
+
+    </div>
+
+
+    <div class="leaf-container">
+
+      <div class="leaf">
+        🌿
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ROUTE SEARCH -->
+
+  <section class="route-box">
+
+    <div class="location">
+
+      <label>
+        FROM
+      </label>
+
+      <input
+        id="from"
+        type="text"
+        placeholder="Chennai"
+      >
+
+    </div>
+
+
+    <div class="route-arrow">
+      →
+    </div>
+
+
+    <div class="location">
+
+      <label>
+        TO
+      </label>
+
+      <input
+        id="to"
+        type="text"
+        placeholder="Bengaluru"
+      >
+
+    </div>
+
+
+    <button id="calculate">
+      CALCULATE JOURNEY
+    </button>
+
+  </section>
+
+
+  <!-- RESULTS -->
+
+  <section
+    id="results"
+    class="results hidden">
+
+
+    <!-- SUMMARY -->
+
+    <div class="summary">
+
+      <div class="summary-item">
+
+        <small>
+          GREEN SCORE
+        </small>
+
+        <strong id="greenScore">
+          94
+        </strong>
+
+        <span>
+          /100
+        </span>
+
+      </div>
+
+
+      <div class="summary-item">
+
+        <small>
+          GREENEST OPTION
+        </small>
+
+        <b id="bestOption">
+          Train
+        </b>
+
+      </div>
+
+
+      <div class="summary-item">
+
+        <small>
+          CO₂ SAVED
+        </small>
+
+        <b id="saved">
+          41.4 kg
+        </b>
+
+      </div>
+
+    </div>
+
+
+    <!-- ROUTE TITLE -->
+
+    <div class="route-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          YOUR JOURNEY
+        </p>
+
+        <h2 id="routeTitle">
+          Chennai → Bengaluru
+        </h2>
+
+      </div>
+
+      <div class="eco-badge">
+        🌱 GREEN CHOICE
+      </div>
+
+    </div>
+
+
+    <!-- TRANSPORT OPTIONS -->
+
+    <div
+      class="transport-grid"
+      id="transport">
+    </div>
+
+
+    <!-- WHAT IF -->
+
+    <section class="what-if">
+
+      <div class="what-if-text">
+
+        <p class="eyebrow">
+          WHAT IF?
+        </p>
+
+        <h2>
+          Make your routine greener.
+        </h2>
+
+        <p>
+          See how much CO₂ you could save by choosing
+          the greenest option more often.
+        </p>
+
+      </div>
+
+
+      <div class="calculator">
+
+        <div class="trip-number">
+
+          <strong id="days">
+            8
+          </strong>
+
+          <span>
+            trips / month
+          </span>
+
+        </div>
+
+
+        <input
+          id="tripSlider"
+          type="range"
+          min="1"
+          max="30"
+          value="8"
+        >
+
+
+        <div class="saving">
+
+          Estimated monthly saving:
+
+          <strong id="monthly">
+            331.2 kg
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER STAT -->
+
+    <section class="eco-message">
+
+      <div class="tree-icon">
+        🌳
+      </div>
+
+      <div>
+
+        <h3>
+          Small choices create big changes.
+        </h3>
+
+        <p>
+          Choosing lower-carbon transportation can
+          significantly reduce your travel footprint.
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <p>
+    eco<span>route</span>° — Travel with the planet in mind.
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
